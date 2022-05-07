@@ -1,0 +1,37 @@
+{% extends "base_in_main.html" %}
+
+{% block content %}
+    <h1 align="center">Фотосток</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <body>
+        <p align="center">
+            {{ form.search() }}
+            {{ form.submit(type="submit", class="btn btn-primary") }}
+        </p>
+        </body>
+        <p></p>
+            <p align="center"><img src="../static/photos_xrenotos/1.jpg"
+                width="250" height="250" alt="здесь должна была быть картинка, но не нашлась"
+                               ></p>
+            <p align="center"><a href="/main/download1">Загрузить</a></p>
+            <p align="center"><img src="../static/photos_xrenotos/2.png"
+                width="250" height="250" alt="здесь должна была быть картинка, но не нашлась"
+                               ></p>
+            <p align="center"><a href="/main/download2">Загрузить</a></p>
+            <p align="center"><img src="../static/photos_xrenotos/3.jpg"
+                width="250" height="250" alt="здесь должна была быть картинка, но не нашлась"
+                               ></p>
+            <p align="center"><a href="/main/download3">Загрузить</a></p>
+            <p align="center"><img src="../static/photos_xrenotos/4.jpg"
+                width="250" height="250" alt="здесь должна была быть картинка, но не нашлась"
+                               ></p>
+            <p align="center"><a href="/main/download4">Загрузить</a></p>
+            <p align="center"><img src="../static/photos_xrenotos/5.jpg"
+                width="250" height="250" alt="здесь должна была быть картинка, но не нашлась"
+                               ></p>
+            <p align="center"><a href="/main/download5">Загрузить</a></p>
+        <div>{{ message }}</div>
+    </form>
+
+{% endblock %}

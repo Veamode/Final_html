@@ -1,0 +1,14 @@
+{% extends "base_in_down.html" %}
+
+{% block content %}
+    <h1 align="center">Ваши загрузки</h1>
+    <h2 align="center">Последняя загрузка</h2>
+    <p align="center"><img src="../static/photos_down/1.jpg"
+                           width="250" height="250" alt="здесь должна была быть картинка, но не нашлась"
+                               ></p>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div>{{ message }}</div>
+    </form>
+
+{% endblock %}

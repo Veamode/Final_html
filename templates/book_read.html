@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+{% if current_user.is_authenticated %}
+<h1>Скачать книгу</h1>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(class="form-control") }}<br>
+        {% for error in form.name.errors %}
+            <p name="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    <div>{{message}}</div>
+
+    <p><br><br><br>
+        {{ form.prev_books.label }}<br>
+        {{ form.prev_books(class="form-control") }}<br>
+    </p>
+    {% endif %}
+
+</form>
+{% endblock %}
