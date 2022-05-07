@@ -242,8 +242,9 @@ def down(search):
 
 @app.route('/main/download1', methods=['GET', 'POST'])
 def down_one():
-    # shutil.copy('D:/Pycharm/Project_of_html/static/photos_xrenotos/1.jpg',
-    #             "D:/Pycharm/Project_of_html/static/photos_down/1.jpg")
+    shutil.copy('D:/Pycharm/Final_html/static/photos_xrenotos/1.jpg',
+                "D:/Pycharm/Final_html/static/photos_down/1.jpg")
+    print('Загружено')
     # conn = sqlite3.connect('db/database.db')
     # cursor = conn.cursor()
     # cursor.execute('INSERT INTO photos VALUES(1.jpg, shrek, {})'.format(current_user.id))
@@ -256,8 +257,8 @@ def down_one():
 
 @app.route('/main/download2', methods=['GET', 'POST'])
 def down_two():
-    # shutil.copy('D:/Pycharm/Project_of_html/static/photos_xrenotos/2.png',
-    #             "D:/Pycharm/Project_of_html/static/photos_down/2.png")
+    shutil.copy('D:/Pycharm/Final_html/static/photos_xrenotos/2.png',
+                "D:/Pycharm/Final_html/static/photos_down/2.png")
     l_down = '2.png'
     f = open('db/last_down.txt', 'w')
     f.write(l_down)
@@ -267,8 +268,8 @@ def down_two():
 
 @app.route('/main/download3', methods=['GET', 'POST'])
 def down_three():
-    # shutil.copy('D:/Pycharm/Project_of_html/static/photos_xrenotos/3.jpg',
-    #             "D:/Pycharm/Project_of_html/static/photos_down/3.jpg")
+    shutil.copy('D:/Pycharm/Final_html/static/photos_xrenotos/3.jpg',
+                "D:/Pycharm/Final_html/static/photos_down/3.jpg")
     l_down = '3.png'
     f = open('db/last_down.txt', 'w')
     f.write(l_down)
@@ -278,8 +279,8 @@ def down_three():
 
 @app.route('/main/download4', methods=['GET', 'POST'])
 def down_four():
-    # shutil.copy('D:/Pycharm/Project_of_html/static/photos_xrenotos/4.jpg',
-    #             "D:/Pycharm/Project_of_html/static/photos_down/4.jpg")
+    shutil.copy('D:/Pycharm/Final_html/static/photos_xrenotos/4.jpg',
+                "D:/Pycharm/Final_html/static/photos_down/4.jpg")
     l_down = '4.png'
     f = open('db/last_down.txt', 'w')
     f.write(l_down)
@@ -289,8 +290,8 @@ def down_four():
 
 @app.route('/main/download5', methods=['GET', 'POST'])
 def down_five():
-    # shutil.copy('D:/Pycharm/Project_of_html/static/photos_xrenotos/5.jpg',
-    #             "D:/Pycharm/Project_of_html/static/photos_down/5.jpg")
+    shutil.copy('D:/Pycharm/Final_html/static/photos_xrenotos/5.jpg',
+                "D:/Pycharm/Final_html/static/photos_down/5.jpg")
     l_down = '5.png'
     f = open('db/last_down.txt', 'w')
     f.write(l_down)
